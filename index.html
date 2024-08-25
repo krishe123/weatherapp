@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    {% load static %} <!-- Don't forget to load the static tag library -->
+     <!-- Don't forget to load the static tag library -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,7 +14,7 @@
     <div class="card">
         <div class="search"> <!-- Corrected the class name -->
             <input type="text" placeholder="enter your city name" spellcheck="false">
-            <button><img src="{% static 'img/search.png' %}" alt=""></button>
+            <button><img src="img/search.png " alt=""></button>
         </div>
 
         <div class="error">
@@ -22,7 +22,7 @@
         </div>
 
         <div class="weather">
-            <img src="{% static 'img/surya.png' %}" alt="" class="weather-icon">
+            <img src="img/surya.png" alt="" class="weather-icon">
             <h1 class="temp">
                 22°C
             </h1>
@@ -32,7 +32,7 @@
             </h2>
             <div class="details">
                 <div class="col">
-                    <img src="{% static 'img/humidity.png' %}" alt="">
+                    <img src="img/humidity.png" alt="">
                     <div>
                         <p class="humidity">50%</p>
                         <p>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <img src="{% static 'img/wind_speed.png' %}" alt="">
+                    <img src="img/wind_speed.png" alt="">
                     <div>
                         <p class="wind_speed">15 km/h</p>
                         <p>
@@ -101,13 +101,13 @@
 
                 // Based on the weather condition, change the weather icon
                 if (data.weather[0].main == "Clouds") {
-                    weathericon.src = "{% static 'img/surya.png' %}" // Clouds icon
+                    weathericon.src = "img/surya.png" // Clouds icon
                 } else if (data.weather[0].main == "Rain") {
-                    weathericon.src = "{% static 'img/rain1.png' %}" // Rain icon
+                    weathericon.src = "img/rain1.png" // Rain icon
                 } else if (data.weather[0].main == "Clear") {
-                    weathericon.src = "{% static 'img/yellow.png' %}" // Clear weather (sun) icon
+                    weathericon.src = "img/yellow.png" // Clear weather (sun) icon
                 } else if (data.weather[0].main == "Drizzle") {
-                    weathericon.src = "{% static 'img/drizzle.png' %}" // Drizzle icon
+                    weathericon.src = "img/drizzle.png" // Drizzle icon
                 }
 
                 // Show the weather information
