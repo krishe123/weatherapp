@@ -12,7 +12,7 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter your city name" spellcheck="false">
-            <button><img src="search.png" alt="Search"></button>
+            <button><img src="img/search.png" alt="Search"></button>
         </div>
 
         <div class="error">
@@ -20,19 +20,19 @@
         </div>
 
         <div class="weather">
-            <img src="surya.png" alt="Weather Icon" class="weather-icon">
+            <img src="img/surya.png" alt="Weather Icon" class="weather-icon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">Baroda</h2>
             <div class="details">
                 <div class="col">
-                    <img src="humidity.png" alt="Humidity Icon">
+                    <img src="img/humidity.png" alt="Humidity Icon">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="wind_speed.png" alt="Wind Speed Icon">
+                    <img src="img/wind_speed.png" alt="Wind Speed Icon">
                     <div>
                         <p class="wind_speed">15 km/h</p>
                         <p>Wind Speed</p>
@@ -65,13 +65,13 @@
                 document.querySelector(".wind_speed").innerHTML = data.wind.speed + " km/h";
 
                 if (data.weather[0].main == "Clouds") {
-                    weathericon.src = "surya.png";
+                    weathericon.src = "img/surya.png";
                 } else if (data.weather[0].main == "Rain") {
-                    weathericon.src = "rain1.png";
+                    weathericon.src = "img/rain1.png";
                 } else if (data.weather[0].main == "Clear") {
-                    weathericon.src = "yellow.png";
+                    weathericon.src = "img/yellow.png";
                 } else if (data.weather[0].main == "Drizzle") {
-                    weathericon.src = "drizzle.png";
+                    weathericon.src = "img/drizzle.png";
                 }
 
                 document.querySelector(".weather").style.display = "block";
